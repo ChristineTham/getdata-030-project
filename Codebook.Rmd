@@ -1,0 +1,412 @@
+---
+title: "Codebook"
+author: "Christine Tham"
+date: "25 July 2015"
+output: pdf_document
+---
+
+# Study Design
+
+The data represents data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained: [link](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) 
+
+The data is obtained from:  [link](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) 
+
+A script `run_analysis_R` loads the data into R and creates a tidy data set (described in the "Code book" section of this document), assuming that the contents of the above zip file has been unzipped in the current working directory.
+
+This tidy data set is stored as a text file in the repository `UCI_HAR_tidy.txt`
+
+If loaded into R using `read.table()` it should result in a data frame of 180 observations of 68 variables.
+
+The script also creates the complete data set in a R object called `data`
+
+# Code book
+1. Subject
+  * Class integer
+  * Each row identifies the subject who performed the activity for each window sample.
+  * Its range is from 1 to 30.
+2. Activity_Label
+  * Class Factor
+    1. WALKING
+    2. WALKING_UPSTAIRS
+    3. WALKING_DOWNSTAIRS
+    4. SITTING
+    5. STANDING
+    6. LAYING
+3. tBodyAcc.mean_value.X
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated body acceleration (from accelerometer)
+  * time domain
+  * X axis
+4. tBodyAcc.mean_value.Y
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated body acceleration (from accelerometer)
+  * time domain
+  * Y axis
+5. tBodyAcc.mean_value.Z
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated body acceleration (from accelerometer)
+  * time domain
+  * Z axis
+6. tGravityAcc.mean_value.X
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated gravity acceleration (from accelerometer)
+  * time domain
+  * X axis
+7. tGravityAcc.mean_value.Y
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated gravity acceleration (from accelerometer)
+  * time domain
+  * Y axis
+8. tGravityAcc.mean_value.Z
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated gravity acceleration (from accelerometer)
+  * time domain
+  * Z axis
+9. tBodyAccJerk.mean_value.X
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated body acceleration jerk
+  * time domain
+  * X axis
+10. tBodyAccJerk.mean_value.Y
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated body acceleration jerk
+  * time domain
+  * Y axis
+11. tBodyAccJerk.mean_value.Z
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated body acceleration jerk
+  * time domain
+  * Z axis
+12. tBodyGyro.mean_value.X
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated body angular velocity (from gyroscope)
+  * time domain
+  * X axis
+13. tBodyGyro.mean_value.Y
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated body angular velocity (from gyroscope)
+  * time domain
+  * Y axis
+14. tBodyGyro.mean_value.Z
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated body angular velocity (from gyroscope)
+  * time domain
+  * Z axis
+15. tBodyGyroJerk.mean_value.X
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated body angular velocity jerk (from gyroscope)
+  * time domain
+  * X axis
+16. tBodyGyroJerk.mean_value.Y
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated body angular velocity jerk (from gyroscope)
+  * time domain
+  * Y axis
+17. tBodyGyroJerk.mean_value.Z
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated body angular velocity jerk (from gyroscope)
+  * time domain
+  * Z axis
+18. tBodyAccMag.mean_value
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated body acceleration magnitude
+  * time domain
+19. tGravityAccMag.mean_value
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated gravity acceleration magnitude
+  * time domain
+20. tBodyAccJerkMag.mean_value
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated body acceleration jerk magnitude
+  * time domain
+21. tBodyGyroMag.mean_value
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated gyroscope (angular velocity) magnitude
+  * time domain
+22. tBodyGyroJerkMag.mean_value
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated gyroscope (angular velocity) jerk magnitude
+  * time domain
+23. fBodyAcc.mean_value.X
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated body acceleration (from accelerometer)
+  * frequency domain
+  * X axis
+24. fBodyAcc.mean_value.Y
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated body acceleration (from accelerometer)
+  * frequency domain
+  * Y axis
+25. fBodyAcc.mean_value.Z
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated body acceleration (from accelerometer)
+  * frequency domain
+  * Z axis
+26. fBodyAccJerk.mean_value.X
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated body acceleration jerk
+  * frequency domain
+  * X axis
+27. fBodyAccJerk.mean_value.Y
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated body acceleration jerk
+  * frequency domain
+  * Y axis
+28. fBodyAccJerk.mean_value.Z
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated body acceleration jerk
+  * frequency domain
+  * Z axis
+29. fBodyGyro.mean_value.X
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated body angular velocity (from gyroscope)
+  * frequency domain
+  * X axis
+30. fBodyGyro.mean_value.Y
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated body angular velocity (from gyroscope)
+  * frequency domain
+  * Y axis
+31. fBodyGyro.mean_value.Z
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated body angular velocity (from gyroscope)
+  * frequency domain
+  * Z axis
+32. fBodyAccMag.mean_value
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated body acceleration magnitude
+  * frequency domain
+33. fBodyAccJerkMag.mean_value
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated body acceleration jerk magnitude
+  * frequency domain
+34. fBodyGyroMag.mean_value
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated gyroscope (angular velocity) magnitude
+  * frequency domain
+35. fBodyGyroJerkMag.mean_value
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Mean estimated gyroscope (angular velocity) jerk magnitude
+  * frequency domain
+36. tBodyAcc.std_value.X
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated body acceleration (from accelerometer)
+  * time domain
+  * X axis
+37. tBodyAcc.std_value.Y
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated body acceleration (from accelerometer)
+  * time domain
+  * Y axis
+38. tBodyAcc.std_value.Z
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated body acceleration (from accelerometer)
+  * time domain
+  * Z axis
+39. tGravityAcc.std_value.X
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated gravity acceleration (from accelerometer)
+  * time domain
+  * X axis
+40. tGravityAcc.std_value.Y
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated gravity acceleration (from accelerometer)
+  * time domain
+  * Y axis
+41. tGravityAcc.std_value.Z
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated gravity acceleration (from accelerometer)
+  * time domain
+  * Z axis
+42. tBodyAccJerk.std_value.X
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated body acceleration jerk
+  * time domain
+  * X axis
+43. tBodyAccJerk.std_value.Y
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated body acceleration jerk
+  * time domain
+  * Y axis
+44. tBodyAccJerk.std_value.Z
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated body acceleration jerk
+  * time domain
+  * Z axis
+45. tBodyGyro.std_value.X
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated body angular velocity (from gyroscope)
+  * time domain
+  * X axis
+46. tBodyGyro.std_value.Y
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated body angular velocity (from gyroscope)
+  * time domain
+  * Y axis
+47. tBodyGyro.std_value.Z
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated body angular velocity (from gyroscope)
+  * time domain
+  * Z axis
+48. tBodyGyroJerk.std_value.X
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated body angular velocity jerk (from gyroscope)
+  * time domain
+  * X axis
+49. tBodyGyroJerk.std_value.Y
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated body angular velocity jerk (from gyroscope)
+  * time domain
+  * Y axis
+50. tBodyGyroJerk.std_value.Z
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated body angular velocity jerk (from gyroscope)
+  * time domain
+  * Z axis
+51. tBodyAccMag.std_value
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated body acceleration magnitude
+  * time domain
+52. tGravityAccMag.std_value
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated gravity acceleration magnitude
+  * time domain
+53. tBodyAccJerkMag.std_value
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated body acceleration jerk magnitude
+  * time domain
+54. tBodyGyroMag.std_value
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated gyroscope (angular velocity) magnitude
+  * time domain
+55. tBodyGyroJerkMag.std_value
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated gyroscope (angular velocity) jerk magnitude
+  * time domain
+56. fBodyAcc.std_value.X
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated body acceleration (from accelerometer)
+  * frequency domain
+  * X axis
+57. fBodyAcc.std_value.Y
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated body acceleration (from accelerometer)
+  * frequency domain
+  * Y axis
+58. fBodyAcc.std_value.Z
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated body acceleration (from accelerometer)
+  * frequency domain
+  * Z axis
+59. fBodyAccJerk.std_value.X
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated body acceleration jerk
+  * frequency domain
+  * X axis
+60. fBodyAccJerk.std_value.Y
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated body acceleration jerk
+  * frequency domain
+  * Y axis
+61. fBodyAccJerk.std_value.Z
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated body acceleration jerk
+  * frequency domain
+  * Z axis
+62. fBodyGyro.std_value.X
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated body angular velocity (from gyroscope)
+  * frequency domain
+  * X axis
+63. fBodyGyro.std_value.Y
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated body angular velocity (from gyroscope)
+  * frequency domain
+  * Y axis
+64. fBodyGyro.std_value.Z
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated body angular velocity (from gyroscope)
+  * frequency domain
+  * Z axis
+65. fBodyAccMag.std_value
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated body acceleration magnitude
+  * frequency domain
+66. fBodyAccJerkMag.std_value
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated body acceleration jerk magnitude
+  * frequency domain
+67. fBodyGyroMag.std_value
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated gyroscope (angular velocity) magnitude
+  * frequency domain
+68. fBodyGyroJerkMag.std_value
+  * Class numeric
+  * Mean of measurements for each subject and activity label combination
+  * Standard deviation of estimated gyroscope (angular velocity) jerk magnitude
+  * frequency domain
